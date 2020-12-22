@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Office Css</title>
+    <style type="text/css">
+        #slider{
+            overflow: hidden;
+            
+        }
+        .picture{
+            position: center;
+            margin: 20px;
+            padding: 20px;
+        }
+        #slider figure{
+            position: relative;
+            width: 500%;
+            margin: 0;
+            left: 0;
+            animation: 20s slider infinite;
+        }
+        #slider figure img{
+           
+            float: left;
+        }
+        @keyframes slider {
+            0%{
+                left: 0;
+            }
+            20%{
+                left: 0;
+            }
+            25%{
+                left: -100%;
+            }
+            45%{
+                left: -100%;
+            }
+            50%{
+                left: -200%;
+            }
+            55%{
+                left: -200%;
+            }
+            65%{
+                left: -200%;
+            }
+            70%{
+                left: -200%;
+            }
+            75%{
+                left: -300%;
+            }
+            80%{
+                left: -300%;
+            }
+            95%{
+                left: -300%;
+            }
+            100%{
+                left: -400%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="slider" >
+        <figure>
+            <img src="images/office1.jpg" class="picture" width="19%" height="570" alt="Computer Hope">
+            <img src="images/office2.jpg" width="19%" height="570" alt="Computer Hope" class="picture">
+            <img src="images/office3.jpg" width="19%" height="570" alt="Computer Hope" class="picture">
+            <img src="images/office4.jpg" width="19%" height="570" alt="Computer Hope" class="picture">
+        </figure>
+    </div>
+</body>
+</html>
